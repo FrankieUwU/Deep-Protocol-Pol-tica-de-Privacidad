@@ -1,0 +1,249 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Deep Protocol — Política de Privacidad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Share+Tech&display=swap">
+
+<style>
+  /* ── tokens ─────────────────────────────────────────────────── */
+  :root {
+    --bg:       #0a0e12;
+    --surface:  #111820;
+    --border:   #1e3040;
+    --accent:   #00c8a0;
+    --accent2:  #0084ff;
+    --fg:       #c8d8e0;
+    --fg-dim:   #607080;
+    --mono:     'Share Tech Mono', 'Courier New', monospace;
+    --sans:     'Share Tech', 'Arial', sans-serif;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg:       #f0f4f7;
+      --surface:  #ffffff;
+      --border:   #c0d0dc;
+      --accent:   #007a62;
+      --accent2:  #0055bb;
+      --fg:       #1a2a35;
+      --fg-dim:   #5a7080;
+      color-scheme: light;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg:       #f0f4f7;
+    --surface:  #ffffff;
+    --border:   #c0d0dc;
+    --accent:   #007a62;
+    --accent2:  #0055bb;
+    --fg:       #1a2a35;
+    --fg-dim:   #5a7080;
+    color-scheme: light;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 0;
+  }
+
+  .page {
+    max-width: 740px;
+    margin: 0 auto;
+    padding-block: 56px 80px;
+  }
+
+  /* header */
+  .header {
+    border-left: 3px solid var(--accent);
+    padding-left: 20px;
+    margin-bottom: 48px;
+  }
+  .header .label {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .header h1 {
+    font-family: var(--mono);
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0 0 6px;
+    color: var(--fg);
+    text-wrap: balance;
+  }
+  .header .meta {
+    font-size: 12px;
+    color: var(--fg-dim);
+    font-family: var(--mono);
+  }
+
+  /* sections */
+  section { margin-bottom: 36px; }
+  h2 {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    color: var(--accent);
+    margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  h2::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  p { margin: 0 0 12px; }
+  p:last-child { margin-bottom: 0; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 20px 24px;
+    margin-top: 10px;
+  }
+  .card p:last-child { margin-bottom: 0; }
+
+  .tag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 2px;
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    color: var(--accent);
+    border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+    margin: 2px 4px 2px 0;
+  }
+  .tag.blue {
+    background: color-mix(in srgb, var(--accent2) 12%, transparent);
+    color: var(--accent2);
+    border-color: color-mix(in srgb, var(--accent2) 25%, transparent);
+  }
+
+  .contact-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 20px 24px;
+    font-family: var(--mono);
+    font-size: 13px;
+  }
+  .contact-box .email {
+    color: var(--accent);
+    word-break: break-all;
+  }
+
+  .footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--fg-dim);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+</style>
+
+<div class="page">
+  <div class="header">
+    <div class="label">Legal / Privacidad</div>
+    <h1>Deep Protocol<br>Política de Privacidad</h1>
+    <div class="meta">Última actualización: 18 de noviembre de 2026</div>
+  </div>
+
+  <section>
+    <h2>Resumen</h2>
+    <div class="card">
+      <p>Deep Protocol es un juego arcade para Android desarrollado por DeepHouse. Esta política explica qué datos se recopilan al usar la aplicación, quién los recopila y cómo se utilizan.</p>
+      <p>El juego en sí no recopila, almacena ni transmite ningún dato personal de forma directa. Sin cuentas de usuario, sin inicio de sesión, sin almacenamiento en servidores propios.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Publicidad (AdMob)</h2>
+    <div class="card">
+      <p>Deep Protocol muestra anuncios intersticiales proporcionados por <strong>Google AdMob</strong>. AdMob es un servicio de terceros operado por Google LLC, y puede recopilar los siguientes datos para mostrar y medir anuncios:</p>
+      <p>
+        <span class="tag">Identificadores de dispositivo</span>
+        <span class="tag">Dirección IP</span>
+        <span class="tag">Ubicación aproximada</span>
+        <span class="tag">Interacciones con anuncios</span>
+        <span class="tag">Datos de diagnóstico</span>
+      </p>
+      <p>Estos datos los recopila Google, no DeepHouse. Se rigen por la política de privacidad propia de Google:</p>
+      <p><strong>Política de privacidad de Google:</strong> https://policies.google.com/privacy</p>
+      <p>Puedes desactivar la publicidad personalizada en cualquier momento desde los ajustes del dispositivo: <strong>Ajustes → Google → Anuncios → Inhabilitar personalización de anuncios</strong>.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Datos que recopilamos</h2>
+    <div class="card">
+      <p>DeepHouse <strong>no</strong> recopila, transmite ni almacena ningún dato personal. El juego no incluye ningún SDK de analíticas, ni sistema de informes de errores, ni servidor propio. Todo el progreso del juego se guarda localmente en tu dispositivo.</p>
+      <p>
+        <span class="tag blue">Solo almacenamiento local</span>
+        <span class="tag blue">Sin cuentas de usuario</span>
+        <span class="tag blue">Sin llamadas a red propias</span>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Menores de edad</h2>
+    <div class="card">
+      <p>Deep Protocol no está dirigido a menores de 13 años. No recopilamos conscientemente datos personales de niños. La aplicación contiene anuncios que pueden usar identificadores publicitarios en los dispositivos; esto lo gestiona íntegramente Google AdMob conforme a sus propias políticas de cumplimiento con COPPA.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Compartir datos</h2>
+    <div class="card">
+      <p>DeepHouse no vende, cede ni comparte ningún dato de usuario con terceros. El único tratamiento de datos por parte de terceros ocurre a través de Google AdMob, tal como se describe en la sección de Publicidad.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cambios en esta política</h2>
+    <div class="card">
+      <p>Si esta política cambia de forma relevante (por ejemplo, si añadimos analíticas o cambiamos el proveedor de anuncios), la política actualizada se publicará en esta misma URL con una nueva fecha de "Última actualización".</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
+    <div class="contact-box">
+      <div style="color: var(--fg-dim); margin-bottom: 8px;">Desarrollador</div>
+      <div style="margin-bottom: 4px;">DeepHouse</div>
+      <div>Email: <span class="email">paco.montanez.3ero@gmail.com</span></div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <span>Deep Protocol — DeepHouse © 2026</span>
+    <span>Paquete: deep.protocol.Ganymede</span>
+  </div>
+</div>
+
+</body></html>
